@@ -1,8 +1,8 @@
 import './App.css';
 import React from 'react';
 import { Route, Routes, Link } from "react-router-dom";
-import About from './About';
-import Home from './Home';
+import About from './admin/About';
+import Home from './admin/Home';
 
 class App extends React.Component {
   render() {
@@ -15,17 +15,14 @@ class App extends React.Component {
                   <Link to="/">Home</Link>
                 </li>
                 <li>
-                <Link to="/about">About</Link>
-                </li>
-                <li>
-                <Link to="/contact">Contact</Link>
+                <Link to="/admin/about">About</Link>
                 </li>
               </ul>
             </nav>
           </div>
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
+              <Route path="/admin/about" element={<About />} />
             </Routes>
         </div>
       );
