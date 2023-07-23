@@ -2,13 +2,20 @@ import React from 'react';
 import { Route, Routes, Link } from "react-router-dom";
 import '../style.css';
 import MLIntro1A from '../section1/MLIntro1A';
+import { useAuth0 } from "@auth0/auth0-react";
 
 
-class Outline extends React.Component {
-    
-    render() {
-        return (
-            <div className='grid-item full-content content-grid'>
+const Outline = () => {
+
+    const { user, isAuthenticated, isLoading } = useAuth0();
+  
+    if (isLoading) {
+      return <div>Loading ...</div>;
+    }
+  
+    return (
+      isAuthenticated && (
+        <div className='grid-item full-content content-grid'>
                 <section className='grid-item-content ml-outline'>    
                         <h2>Outline</h2>   
                         <ol>
@@ -80,10 +87,9 @@ class Outline extends React.Component {
                     </Routes>
                 </section>
             </div>
-        )
-    }
-}
-
+      )
+    );
+  };
 
 
 export default Outline;
