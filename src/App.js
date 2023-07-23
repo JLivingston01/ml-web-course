@@ -1,4 +1,5 @@
 import './App.css';
+import './style.css';
 import React from 'react';
 import { Route, Routes, Link } from "react-router-dom";
 import About from './admin/About';
