@@ -1,17 +1,28 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Auth0Provider } from '@auth0/auth0-react';
 import { HashRouter } from 'react-router-dom';
 
-ReactDOM.render(
+const root = createRoot(document.getElementById('root'));
+
+
+root.render(
   <React.StrictMode>
     <HashRouter>
-      <App />
+      <Auth0Provider
+        domain="dev-3ipgnjq2e5al672h.us.auth0.com"
+        clientId="6cQsezRx8zKfAbaEA5gfMCcI4yZ0kw0b"
+        authorizationParams={{
+          redirect_uri: window.location.origin+"/ml-web-course"
+        }}
+      >
+        <App />
+      </Auth0Provider>,
     </HashRouter>
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 );
 
 
