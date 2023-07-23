@@ -1,35 +1,39 @@
-import logo from './logo.svg';
 import './App.css';
-import { Route, Switch, Link } from "react-router-dom";
+import React from 'react';
+import { Route, Routes, Link } from "react-router-dom";
+import About from './About';
+import Home from './Home';
 
-function App() {
-  return (
-    <div className='App'>
-      <div>
-        <nav>
-            <ul id="navigation">
+class App extends React.Component {
+  render() {
+      return (
+        <div className="App">
+          <div>
+            <nav>
+              <ul id="navigation">
                 <li>
-                    <Link to="/">Home</Link>
+                  <Link to="/">Home</Link>
                 </li>
                 <li>
-                    <Link to="/about">About</Link>
+                <Link to="/about">About</Link>
                 </li>
                 <li>
-                    <Link to="/contact">Contact</Link>
+                <Link to="/contact">Contact</Link>
                 </li>
-            </ul>
-        </nav>
-      </div>
-      <Switch>
-          <Route exact path="/">
-          <Home />
-          </Route>
-          <Route path="/about">
-          <About />
-          </Route>
-      </Switch>
-    </div>
-  );
+              </ul>
+            </nav>
+          </div>
+            <Routes>
+                <Route exact path="/">
+                  <Home />
+                </Route>
+                <Route path="/about">
+                  <About />
+                </Route>
+            </Routes>
+          </div>
+            );
+  }
 }
 
 export default App;
