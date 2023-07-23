@@ -3,18 +3,13 @@ import { Route, Routes, Link } from "react-router-dom";
 import '../style.css';
 import MLIntro1A from '../section1/MLIntro1A';
 
-const divStyle = {
-    color:'black'
-};
 
-class About extends React.Component {
+class Outline extends React.Component {
     
     render() {
         return (
-            
-            <main> 
-            <div className="grid-container ">
-                <section className="grid-item ml-outline ">    
+            <div className='grid-item full-content content-grid'>
+                <section className='grid-item-content ml-outline'>    
                         <h2>Outline</h2>   
                         <ol>
                             <li type="1">
@@ -79,18 +74,16 @@ class About extends React.Component {
                                 </ol>
                         </ol>
                 </section>
-                <section className="grid-item ml-content ">    
+                <section className='grid-item-content ml-content'>    
                     <Routes>
                         <Route path="MLIntro1A" element={<MLIntro1A />} />
                     </Routes>
                 </section>
             </div>
-            
-            </main>
         )
     }
 }
 
 
 
-export default About;
+export default Outline;

@@ -4,14 +4,12 @@ class MLIntro1A extends React.Component {
     
     render() {
         return (
-            <div >
+            <div>
                 <h2>What is Machine Learning?</h2>
-                <main>
-                    <p>
-                        
+                <p>
+                    
 
-                    </p>
-                </main>
+                </p>
             </div>
         )
     }
