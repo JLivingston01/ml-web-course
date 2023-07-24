@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ml-web-course/static/css/main.b168fc12.css",
-    "main.js": "/ml-web-course/static/js/main.a4f09c7f.js",
+    "main.js": "/ml-web-course/static/js/main.acb8d2c0.js",
     "static/js/787.6e101780.chunk.js": "/ml-web-course/static/js/787.6e101780.chunk.js",
     "index.html": "/ml-web-course/index.html",
     "main.b168fc12.css.map": "/ml-web-course/static/css/main.b168fc12.css.map",
-    "main.a4f09c7f.js.map": "/ml-web-course/static/js/main.a4f09c7f.js.map",
+    "main.acb8d2c0.js.map": "/ml-web-course/static/js/main.acb8d2c0.js.map",
     "787.6e101780.chunk.js.map": "/ml-web-course/static/js/787.6e101780.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b168fc12.css",
-    "static/js/main.a4f09c7f.js"
+    "static/js/main.acb8d2c0.js"
   ]
 }
